@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--自定义颜色-->
+    <color name="color_primary_blue">#5078ED</color>
+    <color name="color_deep_blue">#5078ED</color>
+    <color name="color_primary_white">#ffffff</color>
+    <color name="color_fade_gray">#efefef</color>
+    <color name="color_txt_gray">#B4B4B4</color>
+    <color name="color_divider_gray">#EFEFEF</color>
+    <color name="color_bt_up">#2783D9</color>
+    <color name="color_bt_down">#2C94F5</color>
+
+
+    <color name="color_full_transparent">#90ffffff</color>
+    <color name="half_theme_green">#5053d555</color>
+    <color name="half_transparent">#80000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="theme_green">#53d555</color>
+    <color name="app_fade_gray">#EEEEEE</color>
+    <color name="app_txt_fade_gray">#a2a2a2</color>
+    <color name="app_green">#11cd6e</color>
+    <color name="color_primary_pink">#FF495A</color>
+    <color name="red">#B21110</color>
+    <color name="color_primary_black">#000000</color>
+    <color name="color_balance">#4d4b4b</color>
+    <color name="color_text">#6c6b6b</color>
+    <color name="color_froum_sort">#E0AC00</color>
+    <color name="color_user">#2D2D2D</color>
+    <color name="color_index">#666666</color>
+    <color name="color_toolbar">#f5f5f5</color>
+    <color name="color_code">#EBBD8C</color>
+
+    <!--首页的颜色-->
+    <color name="home_RadioButton_check">#2DAD72</color>
+    <color name="home_RadioButton_Notcheck">#777777</color>
+
+
+    <!--社区论坛颜色-->
+    <color name="color_comm_froum_txt">#818181</color>
+    <color name="color_comm_froum_contenttxt">#9F9F9F</color>
+
+    <!--发帖页面的颜色-->
+    <color name="color_postFroum_txt">#9D9D9D</color>
+    <color name="color_postFroum_body">#BDBDBD</color>
+    <color name="color_postFroum_title">#2D2D2D</color>
+    <color name="color_postFroum_lable">#FFC000</color>
+
+    <color name="color_froum_Tag">#E0AC00</color>
+
+    <color name="listview_driver">#eeeeee</color>
+    <color name="green">#e581ff02</color>
+    <color name="bg">#4d4d4d</color>
+
+</resources>

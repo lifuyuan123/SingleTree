@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_coupon_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sctjsj.forestcommunity.ui.activity.CouponMessageActivity">
+
+    <!--title-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:id="@+id/coupon_back"
+            android:layout_width="@dimen/x45"
+            android:layout_height="@dimen/x45"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_marginRight="@dimen/x5"
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15"
+                android:src="@mipmap/ic_defult_back"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/x45"
+            android:text="优惠详情"
+            android:textSize="@dimen/x17"
+            android:textColor="#2D2D2D"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x35"
+        android:text="购买须知"
+        android:paddingLeft="@dimen/x10"
+        android:gravity="center_vertical"
+        android:textColor="#2D2D2D"
+        android:textStyle="bold"
+        android:background="@color/app_fade_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:text="有效期"
+                android:layout_marginLeft="@dimen/x10"
+                android:textColor="#2D2D2D"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               android:layout_marginTop="@dimen/x10"
+                >
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/x7"
+                    android:layout_height="@dimen/x7"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:src="@drawable/ic_defult_point"
+                    />
+                <TextView
+                    android:id="@+id/coupon_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2016-05-07至2017-05-07"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x5"
+                    />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:textColor="#2D2D2D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:text="优惠简介"
+                android:layout_marginLeft="@dimen/x10"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/x10"
+                >
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/x7"
+                    android:layout_height="@dimen/x7"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:src="@drawable/ic_defult_point"
+                    />
+                <TextView
+                    android:id="@+id/coupon_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="在本店内消费满100立减50"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x5"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:textColor="#2D2D2D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:text="使用条件"
+                android:layout_marginLeft="@dimen/x10"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/x10"
+                >
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/x7"
+                    android:layout_height="@dimen/x7"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:src="@drawable/ic_defult_point"
+                    />
+                <TextView
+                    android:id="@+id/coupon_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="在本店内消费满100立减50"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x5"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/app_fade_gray"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/coupon_Price"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="¥89"
+                    android:textColor="@color/money_color"
+                    android:textSize="30sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x20"
+                    />
+
+                <Button
+                    android:id="@+id/coupon_buy_btn"
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="@dimen/x40"
+                    android:layout_marginRight="@dimen/x15"
+                    android:layout_gravity="center_vertical"
+                    android:text="立即抢购"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="@drawable/ic_coupon_btn_bck"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

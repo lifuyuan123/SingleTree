@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lin_card_item"
+        android:background="@drawable/card_pakage_background"
+        android:layout_marginTop="@dimen/x5"
+        android:layout_marginBottom="@dimen/x5"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100">
+       <LinearLayout
+           android:background="@drawable/card_pakage_left_background"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:layout_width="@dimen/x80"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:layout_marginBottom="@dimen/x5"
+               android:orientation="horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/tv_card_money"
+                   android:text="10"
+                   android:textStyle="bold"
+                   android:textColor="@color/color_user"
+                   android:textSize="@dimen/x30"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:id="@+id/tv_card_unit"
+                   android:text="元"
+                   android:textStyle="bold"
+                   android:textColor="@color/color_user"
+                   android:textSize="@dimen/x12"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_marginTop="@dimen/x5"
+               android:orientation="horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/tv_card_ullcut"
+                   android:text="满10.01减"
+                   android:textColor="@color/color_user"
+                   android:textSize="@dimen/x12"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+        <View
+            android:layerType="software"
+            android:layout_marginLeft="-65dp"
+            android:layout_marginRight="-50dp"
+            android:background="@drawable/card_dashgap"
+            android:layout_width="@dimen/x100"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/x5"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_card_condition"
+                android:text="新客专享"
+                android:textSize="@dimen/x14"
+                android:textColor="@color/color_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="@dimen/x10"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_card_deductible"
+                    android:text="抵用券"
+                    android:textSize="@dimen/x12"
+                    android:textColor="@color/app_txt_fade_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:id="@+id/tv_card_date"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:text="5天后过期"
+                    android:textSize="@dimen/x12"
+                    android:textColor="#E0AC00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

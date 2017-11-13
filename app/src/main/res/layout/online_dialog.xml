@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="@dimen/x210"
+        android:layout_height="@dimen/x120"
+        android:background="@drawable/dialog_shop_phone_bg"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50"
+            android:gravity="center"
+            android:text="咨询热线"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/x16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/app_fade_gray"
+            />
+        <LinearLayout
+            android:id="@+id/lin_phone"
+            android:gravity="center"
+            android:layout_margin="@dimen/x10"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:textColor="@color/color_user"
+                android:textSize="@dimen/x13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拨打电话："
+                />
+            <TextView
+                android:textSize="@dimen/x13"
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="028-2456978"
+                android:textColor="@color/color_primary_blue"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

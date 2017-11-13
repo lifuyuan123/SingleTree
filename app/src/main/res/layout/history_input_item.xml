@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lin_history_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40">
+        <TextView
+            android:id="@+id/tv_history_item"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center_vertical"
+            android:text="我是历史搜索"
+            android:textSize="@dimen/x12"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40" />
+    </LinearLayout>
+
+</LinearLayout>

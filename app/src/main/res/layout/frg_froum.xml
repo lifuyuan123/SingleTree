@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--标题-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="论坛"
+            android:textColor="#2D2D2D"
+            android:textStyle="bold"
+            android:textSize="@dimen/x17"
+            />
+    </LinearLayout>
+
+    <!--正文的复杂布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <q.rorbin.qrefreshlayout.QRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/froum_qrl"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/froum_rv"
+                />
+        </q.rorbin.qrefreshlayout.QRefreshLayout>
+    </LinearLayout>
+
+</LinearLayout>

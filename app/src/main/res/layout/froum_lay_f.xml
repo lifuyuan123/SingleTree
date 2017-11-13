@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--社区论坛的title-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="社区新闻"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/x15"
+                android:textStyle="bold"
+                android:textColor="#2D2D2D"
+                android:layout_marginLeft="@dimen/x10"
+                />
+            <LinearLayout
+                android:id="@+id/froum_lay_f_more"
+                android:layout_width="@dimen/x50"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:layout_marginRight="@dimen/x5"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/x10"
+                    android:layout_height="@dimen/x10"
+                    android:src="@mipmap/ic_next"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

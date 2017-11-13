@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x10"
+        android:background="@color/app_fade_gray" />
+
+    <!--第一排导航-->
+    <LinearLayout
+        android:layout_marginTop="@dimen/x15"
+        android:layout_marginBottom="@dimen/x8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--一卡通-->
+        <LinearLayout
+            android:id="@+id/ll_e_card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x45"
+                android:layout_height="@dimen/x45"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_card" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x10"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="一卡通"
+                android:textColor="#3F3F3F"
+                android:textSize="@dimen/x14" />
+        </LinearLayout>
+
+        <!--周边商家-->
+        <LinearLayout
+            android:id="@+id/lay_2_perShop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x45"
+                android:layout_height="@dimen/x45"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_around" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x10"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="周边商家"
+                android:textColor="#3F3F3F"
+                android:textSize="@dimen/x14" />
+        </LinearLayout>
+
+        <!--生活缴费-->
+        <LinearLayout
+            android:id="@+id/lin_pay_life"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/x45"
+                android:layout_height="@dimen/x45"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_life_pay" />
+
+            <TextView
+                android:layout_marginTop="@dimen/x10"
+                android:textSize="@dimen/x14"
+                android:textColor="#3F3F3F"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="生活缴费"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!--业主积分-->
+        <LinearLayout
+            android:id="@+id/lin_owner_integral"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_owner_score"
+                android:layout_width="@dimen/x45"
+                android:layout_height="@dimen/x45" />
+            <TextView
+                android:layout_marginTop="@dimen/x10"
+                android:textSize="@dimen/x14"
+                android:textColor="#3F3F3F"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="业主积分"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--第二排导航-->
+    <LinearLayout
+        android:layout_marginTop="@dimen/x8"
+        android:layout_marginBottom="@dimen/x15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--装修建材-->
+        <LinearLayout
+            android:id="@+id/lin_decoration"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x45"
+                android:layout_height="@dimen/x45"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_furnish_matirail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x10"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="装修建材"
+                android:textColor="#3F3F3F"
+                android:textSize="@dimen/x14" />
+        </LinearLayout>
+
+        <!--租售中心-->
+        <LinearLayout
+            android:id="@+id/lin_rentalCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x45"
+                android:layout_height="@dimen/x45"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_rent_center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x10"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="租售中心"
+                android:textColor="#3F3F3F"
+                android:textSize="@dimen/x14" />
+        </LinearLayout>
+
+        <!--在线咨询-->
+        <LinearLayout
+            android:id="@+id/lin_online"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_online_call"
+                android:layout_width="@dimen/x45"
+                android:layout_height="@dimen/x45" />
+            <TextView
+                android:layout_marginTop="@dimen/x10"
+                android:textSize="@dimen/x14"
+                android:textColor="#3F3F3F"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="在线咨询"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!--更多内容-->
+        <LinearLayout
+            android:id="@+id/lin_more_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_more_content"
+                android:layout_width="@dimen/x45"
+                android:layout_height="@dimen/x45" />
+            <TextView
+                android:layout_marginTop="@dimen/x10"
+                android:textSize="@dimen/x14"
+                android:textColor="#3F3F3F"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="更多内容"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x10"
+        android:background="@color/app_fade_gray" />
+
+
+</LinearLayout>

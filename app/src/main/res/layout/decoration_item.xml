@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="@dimen/x1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/lin_decoration_item"
+    android:background="#F3F3F3"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="@dimen/x100"
+    android:layout_height="@dimen/x100">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x70">
+        <ImageView
+            android:id="@+id/iv_decoration"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_decoration_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_decoration_name"
+        android:gravity="center"
+        android:textSize="@dimen/x12"
+        android:text="易诗顿"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+</LinearLayout>

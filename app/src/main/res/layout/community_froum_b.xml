@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="@dimen/x300"
+            android:layout_height="@dimen/x1"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@color/app_fade_gray"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <LinearLayout
+                android:id="@+id/community_froum_b_loveLayout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/community_froum_b_loveImg"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:src="@mipmap/ic_froum_love"
+                    />
+                <TextView
+                    android:id="@+id/community_froum_b_loveTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="赞"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:textSize="@dimen/x15"
+                    android:textColor="@color/color_comm_froum_txt"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/x1"
+                android:layout_height="@dimen/x20"
+                android:background="@color/app_fade_gray"
+                />
+
+            <LinearLayout
+                android:id="@+id/community_froum_b_commitLayout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:src="@mipmap/ic_froum_commit"
+                    />
+                <TextView
+                    android:id="@+id/community_froum_b_commNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:textSize="@dimen/x15"
+                    android:textColor="@color/color_comm_froum_txt"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:background="@color/app_fade_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x10" />
+</LinearLayout>

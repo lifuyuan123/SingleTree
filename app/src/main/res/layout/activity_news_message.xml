@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_news_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_toolbar"
+    android:orientation="vertical"
+    tools:context="com.sctjsj.forestcommunity.ui.activity.NewsMessageActivity">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/news_message_rv"
+        android:background="@color/white"
+        />
+
+</LinearLayout>

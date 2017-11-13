@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_community_forum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_toolbar"
+    android:orientation="vertical"
+    tools:context="com.sctjsj.forestcommunity.ui.activity.CommunityForumActivity">
+
+    <!--title-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:id="@+id/froum_community_back"
+            android:layout_width="@dimen/x45"
+            android:layout_height="@dimen/x45"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15"
+                android:src="@mipmap/ic_defult_back"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/x45"
+            android:text="社区论坛"
+            android:textSize="@dimen/x17"
+            android:textColor="#2D2D2D"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/app_fade_gray"
+        />
+
+    <!--中间的内容-->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:orientation="vertical">
+       <q.rorbin.qrefreshlayout.QRefreshLayout
+           android:id="@+id/froum_community_rl"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/froum_community_rv"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"/>
+       </q.rorbin.qrefreshlayout.QRefreshLayout>
+   </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/app_fade_gray"
+        />
+    <!--输入评论-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/x45"
+            android:layout_height="@dimen/x45"
+            android:layout_marginLeft="@dimen/x5"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25"
+                android:src="@drawable/ic_keybord" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/froum_community_edt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="来点评一下吧..."
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:id="@+id/froum_community_btn"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@color/white"
+            android:gravity="right|center_vertical"
+            android:text="发送"
+            android:textColor="#F4AC00"
+            android:textSize="@dimen/x16" />
+    </LinearLayout>
+</LinearLayout>

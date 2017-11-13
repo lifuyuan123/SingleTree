@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--白天主题-->
+    <style name="my_style_day" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/home_RadioButton_check</item>
+        <item name="colorPrimaryDark">@color/color_toolbar</item>
+        <item name="colorAccent">#8AD5FB</item>
+    </style>
+
+    <!--抽奖主题-->
+    <style name="luckly" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">#E84144</item>
+        <item name="colorPrimaryDark">#E84144</item>
+        <item name="colorAccent">#8AD5FB</item>
+    </style>
+
+
+
+
+    <style name="All_dialog" parent="@android:style/Theme.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="TabLayout_textSize" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/x14</item>
+    </style>
+
+    <!-- CustomCheckBox theme -->
+         <style name="CustomCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+            <item name="android:button">@null</item>
+             <item name="android:background">@drawable/checkbox_style</item>
+         </style>
+
+</resources>

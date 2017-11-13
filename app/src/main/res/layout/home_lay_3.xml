@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+    <!--活动专区-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x51">
+
+        <ImageView
+
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/x25"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/pic_activity_area" />
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_gray_shadow_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x6" />
+    </RelativeLayout>
+
+
+
+    <!--跑马灯-->
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:id="@+id/lin_recommend"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x55">
+
+        <RelativeLayout
+            android:layout_width="@dimen/x55"
+            android:layout_height="@dimen/x55">
+            <ImageView
+                android:src="@mipmap/icon_home_today_recommend"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/x40" />
+        </RelativeLayout>
+
+        <TextView
+            android:background="#EAEBEC"
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/x1"
+            android:layout_height="@dimen/x40" />
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x45">
+
+            <com.sunfusheng.marqueeview.MarqueeView
+                android:id="@+id/hot_marqueeView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x55"
+                app:mvAnimDuration="1000"
+                app:mvDirection="bottom_to_top"
+                app:mvInterval="3000"
+                app:mvGravity="center"
+                app:mvTextColor="@color/color_user"
+                app:mvTextSize="@dimen/x12"
+                app:mvSingleLine="false">
+            </com.sunfusheng.marqueeview.MarqueeView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/icon_home_arrow_right_gray"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/x12"
+                android:layout_height="@dimen/x12" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:background="@color/app_fade_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1" />
+
+    <!--viewpager-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150">
+        <HorizontalScrollView
+            android:scrollbars="none"
+            android:id="@+id/hs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:id="@+id/lin_hs"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+            
+        </HorizontalScrollView>
+        
+    </RelativeLayout>
+
+    <TextView
+        android:background="@color/app_fade_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x10" />
+
+</LinearLayout>

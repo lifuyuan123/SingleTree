@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_hot"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x55">
+
+        <!--左侧-->
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="@dimen/x10"
+                android:src="@mipmap/icon_hot"
+                android:layout_width="@dimen/x28"
+                android:layout_height="@dimen/x28" />
+            <TextView
+                android:layout_marginLeft="@dimen/x5"
+                android:textSize="@dimen/x16"
+                android:textStyle="bold"
+                android:text="热点资讯"
+                android:textColor="#D81E06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <!--右侧-->
+        <LinearLayout
+            android:layout_marginRight="@dimen/x5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/x12"
+                android:text="更多"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/icon_home_arrow_right_gray"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/x12"
+                android:layout_height="@dimen/x12" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:background="#DCDDDE"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1" />
+
+</LinearLayout>

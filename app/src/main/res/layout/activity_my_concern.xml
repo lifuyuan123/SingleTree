@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_toolbar"
+    android:orientation="vertical"
+    tools:context="com.sctjsj.forestcommunity.ui.activity.MyConcernActivity">
+    <!--title-->
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/linear_back"
+            android:layout_margin="@dimen/x5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_margin="@dimen/x6"
+                android:src="@drawable/icon_longin_back"
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:text="我的关注"
+                android:textSize="@dimen/x16"
+                android:gravity="center"
+                android:textColor="@color/material_blue_grey_95"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:background="#B6B6B6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+    </RelativeLayout>
+
+    <q.rorbin.qrefreshlayout.QRefreshLayout
+        android:id="@+id/ql_concern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_concern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    </q.rorbin.qrefreshlayout.QRefreshLayout>
+
+
+</LinearLayout>

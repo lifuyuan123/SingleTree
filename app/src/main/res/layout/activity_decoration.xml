@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_toolbar"
+    android:orientation="vertical"
+    android:id="@+id/decor_layout"
+    tools:context="com.sctjsj.forestcommunity.ui.activity.DecorationActivity">
+    
+    <!--title-->
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45">
+        <LinearLayout
+            android:id="@+id/linear_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/x5"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15"
+                android:layout_margin="@dimen/x5"
+                android:src="@drawable/icon_longin_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="装修建材"
+                android:textColor="@color/color_user"
+                android:textSize="@dimen/x16" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:background="@mipmap/icon_decoration"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80" />
+    
+    <q.rorbin.qrefreshlayout.QRefreshLayout
+        android:background="@color/white"
+        android:id="@+id/ql_decoration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="@dimen/x10"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginBottom="@dimen/x20"
+                android:id="@+id/rv_decoration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </q.rorbin.qrefreshlayout.QRefreshLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/dec_lay_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="@dimen/x70"
+                android:layout_height="@dimen/x70"
+                android:src="@drawable/ic_defult_no_data"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无数据"
+                android:layout_marginTop="@dimen/x5"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

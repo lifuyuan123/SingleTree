@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/shop_lay_e_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+        <!--<TextView
+            android:lineSpacingExtra="@dimen/x5"
+            android:textSize="@dimen/x11"
+            android:id="@+id/shop_lay_e_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_user"
+            android:text="全友家私是2009年06月12日由全友家私有限公司申请注册的品牌。主要应用于陈列柜(家具)，床，床垫，家具，沙发等领域。全友家私在全国均有门店分布，以其广告中的熊猫为标志，以此来宣传突出全有家私的品牌口号：“绿色全友，温馨世界”。"
+            android:layout_margin="@dimen/x10"
+            />
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/shop_lay_e_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_shop_sltp"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            />-->
+       <!-- <com.tencent.smtt.sdk.WebView
+            android:id="@+id/shop_lay_e_web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>-->
+
+    </LinearLayout>
+</LinearLayout>

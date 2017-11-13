@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_toolbar"
+    android:orientation="vertical"
+    tools:context="com.sctjsj.forestcommunity.ui.activity.PayLifeActivity">
+    <!--title-->
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/linear_back"
+            android:layout_margin="@dimen/x5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_margin="@dimen/x6"
+                android:src="@drawable/icon_longin_back"
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="生活缴费"
+                android:textStyle="bold"
+                android:textSize="@dimen/x16"
+                android:gravity="center"
+                android:textColor="@color/material_blue_grey_95"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+   <ImageView
+    android:background="@mipmap/icon_pay_life_backgroud"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x100" />
+
+<ScrollView
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+          <!--第一排-->
+         <LinearLayout
+             android:layout_marginTop="@dimen/x10"
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/x80">
+
+             <LinearLayout
+                 android:id="@+id/lin_water"
+                 android:gravity="center"
+                 android:orientation="vertical"
+                 android:layout_weight="1"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent">
+                 <ImageView
+                     android:src="@drawable/icon_water"
+                     android:layout_width="@dimen/x30"
+                     android:layout_height="@dimen/x30" />
+                 <TextView
+                     android:textColor="@color/color_user"
+                     android:layout_marginTop="@dimen/x10"
+                     android:text="水费"
+                     android:textSize="@dimen/x14"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/lin_electric"
+                 android:gravity="center"
+                 android:orientation="vertical"
+                 android:layout_weight="1"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent">
+                 <ImageView
+                     android:src="@drawable/icon_electric"
+                     android:layout_width="@dimen/x30"
+                     android:layout_height="@dimen/x30" />
+                 <TextView
+                     android:textColor="@color/color_user"
+                     android:layout_marginTop="@dimen/x10"
+                     android:text="电费"
+                     android:textSize="@dimen/x14"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/lin_gas"
+                 android:gravity="center"
+                 android:orientation="vertical"
+                 android:layout_weight="1"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent">
+                 <ImageView
+                     android:src="@drawable/icon_gas"
+                     android:layout_width="@dimen/x30"
+                     android:layout_height="@dimen/x30" />
+                 <TextView
+                     android:textColor="@color/color_user"
+                     android:layout_marginTop="@dimen/x10"
+                     android:text="燃气费"
+                     android:textSize="@dimen/x14"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+             </LinearLayout>
+         </LinearLayout>
+
+
+        <!--第二排-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x80">
+
+            <LinearLayout
+                android:id="@+id/lin_tv"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/icon_tv"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30" />
+                <TextView
+                    android:textColor="@color/color_user"
+                    android:layout_marginTop="@dimen/x10"
+                    android:text="有线电视"
+                    android:textSize="@dimen/x14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_fixed_phone"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/icon_fixed_phone"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30" />
+                <TextView
+                    android:textColor="@color/color_user"
+                    android:layout_marginTop="@dimen/x10"
+                    android:text="固话"
+                    android:textSize="@dimen/x14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_wifi"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/icon_wifi"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30" />
+                <TextView
+                    android:textColor="@color/color_user"
+                    android:layout_marginTop="@dimen/x10"
+                    android:text="宽带"
+                    android:textSize="@dimen/x14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--第三排-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x80">
+
+            <LinearLayout
+                android:id="@+id/lin_property"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/icon_property"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30" />
+                <TextView
+                    android:textColor="@color/color_user"
+                    android:layout_marginTop="@dimen/x10"
+                    android:text="物业费"
+                    android:textSize="@dimen/x14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30" />
+                <TextView
+                    android:textColor="@color/color_user"
+                    android:layout_marginTop="@dimen/x10"
+                    android:textSize="@dimen/x14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30" />
+                <TextView
+                    android:textColor="@color/color_user"
+                    android:layout_marginTop="@dimen/x10"
+                    android:text=""
+                    android:textSize="@dimen/x14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+    <TextView
+        android:textColor="@color/color_postFroum_body"
+        android:layout_marginTop="@dimen/x10"
+        android:gravity="center"
+        android:text="其他项目正在完善中，敬请期待！"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

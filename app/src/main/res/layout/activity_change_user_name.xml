@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_toolbar"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.sctjsj.forestcommunity.ui.activity.ChangeUserNameActivity">
+    <!--title-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/linear_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/x5"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15"
+                android:layout_margin="@dimen/x5"
+                android:src="@drawable/icon_longin_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="修改昵称"
+                android:textColor="@color/color_user"
+                android:textSize="@dimen/x16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_alignParentBottom="true"
+            android:background="@color/app_fade_gray" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40">
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_marginLeft="@dimen/x10"
+            android:singleLine="true"
+            android:inputType="text"
+            android:hint="请输入昵称"
+            android:textSize="@dimen/x13"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x40" />
+        <LinearLayout
+            android:id="@+id/lin_delete"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:src="@drawable/icon_delete_name"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/bt_confirm"
+        android:text="确认"
+        android:textSize="@dimen/x13"
+        android:textColor="#ffffff"
+        android:background="@drawable/longin_bt_backgroungd"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_width="@dimen/x300"
+        android:layout_height="@dimen/x35" />
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_toolbar"
+    android:orientation="vertical"
+    tools:context="com.sctjsj.forestcommunity.ui.activity.ForgetPSWActivity">
+    <!--title-->
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45">
+        <LinearLayout
+            android:id="@+id/linear_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/x5"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15"
+                android:layout_margin="@dimen/x5"
+                android:src="@drawable/icon_longin_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="忘记密码"
+                android:textColor="@color/color_user"
+                android:textSize="@dimen/x16" />
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/app_fade_gray"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:text="手机号码"
+                android:textColor="@color/color_user"
+                android:textSize="@dimen/x12" />
+
+            <EditText
+                android:id="@+id/edt_forget_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:background="@null"
+                android:hint="请输入手机号码"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textSize="@dimen/x12" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/app_fade_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:gravity="center"
+                android:text="验  证  码"
+                android:textColor="@color/color_user"
+                android:textSize="@dimen/x12" />
+
+            <EditText
+                android:id="@+id/edt_forget_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输图片验证码"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="@dimen/x12" />
+
+            <LinearLayout
+                android:id="@+id/lin_icon_code"
+                android:layout_width="@dimen/x80"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/x10"
+                android:gravity="center"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_confirm"
+        android:layout_width="@dimen/x300"
+        android:layout_height="@dimen/x35"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/longin_bt_backgroungd"
+        android:text="获取短信验证码"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/x13" />
+</LinearLayout>

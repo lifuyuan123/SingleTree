@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x200">
+
+    <com.youth.banner.Banner
+        app:delay_time="2500"
+        app:scroll_time="2000"
+        app:indicator_width="@dimen/x8"
+        app:indicator_height="@dimen/x8"
+        app:indicator_margin="@dimen/x5"
+        app:image_scale_type="fit_xy"
+        app:indicator_drawable_selected="@drawable/x_banner_indicator_dot_select"
+        app:indicator_drawable_unselected="@drawable/x_banner_indicator_dot_not_select"
+        android:id="@+id/home_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.youth.banner.Banner>
+
+    <!--定位块-->
+
+    <!--搜索块-->
+    <LinearLayout
+        android:id="@+id/rel_hone_search"
+        android:background="@drawable/shape_home_locate"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_gravity="bottom|right"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="@dimen/x40">
+        <ImageView
+            android:layout_marginLeft="@dimen/x10"
+            android:id="@+id/home_lay_1_img"
+            android:src="@mipmap/icon_home_search"
+            android:layout_width="@dimen/x15"
+            android:layout_height="@dimen/x15" />
+        <TextView
+            android:layout_marginRight="@dimen/x10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textColor="#081115"
+            android:textSize="@dimen/x15"
+            android:layout_marginLeft="@dimen/x5"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_choice_city"
+        android:background="@drawable/shape_home_locate"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_gravity="bottom"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/x40">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_hone_city"
+                android:singleLine="true"
+                android:maxEms="3"
+                android:ellipsize="end"
+                android:textSize="@dimen/x14"
+                android:textColor="#081115"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/icon_home_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_width="@dimen/x8"
+                android:layout_height="@dimen/x8" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

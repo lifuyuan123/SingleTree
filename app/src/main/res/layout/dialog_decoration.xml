@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+    <LinearLayout
+        android:background="@drawable/dialog_decoration"
+        android:orientation="vertical"
+        android:layout_width="@dimen/x240"
+        android:layout_height="@dimen/x300">
+       <TextView
+           android:id="@+id/tv_dialog_decoration_title"
+           android:text="装修建材（高新店）"
+           android:textColor="@color/color_user"
+           android:textSize="@dimen/x15"
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/x50" />
+        <TextView
+            android:background="@color/app_fade_gray"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/x220"
+            android:layout_height="@dimen/x1" />
+
+        <TextView
+            android:textColor="@color/color_balance"
+            android:id="@+id/tv_dialog_decoration_distance"
+            android:textSize="@dimen/x12"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginBottom="@dimen/x10"
+            android:text="距离 2.3km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/color_balance"
+            android:id="@+id/tv_dialog_decoration_phone"
+            android:textSize="@dimen/x12"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginBottom="@dimen/x10"
+            android:text="电话 028-34567899"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:background="@color/app_fade_gray"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/x220"
+            android:layout_height="@dimen/x1" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/icon_star"
+                android:layout_width="@dimen/x13"
+                android:layout_height="@dimen/x13" />
+            <TextView
+                android:layout_marginLeft="@dimen/x5"
+                android:text="商家介绍"
+                android:textSize="@dimen/x13"
+                android:textColor="@color/color_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_marginTop="@dimen/x5"
+            android:layout_marginBottom="@dimen/x5"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:lineSpacingExtra="@dimen/x2"
+                android:textColor="@color/color_balance"
+                android:id="@+id/tv_dialog_decoration_introduce"
+                android:textSize="@dimen/x10"
+                android:text="这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍这里是详情介绍"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ScrollView>
+
+        <TextView
+            android:background="@color/app_fade_gray"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1" />
+
+        <LinearLayout
+            android:id="@+id/lin_dialog_decoration_go"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/x10"
+            android:background="@drawable/longin_bt_backgroungd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x35">
+            <ImageView
+                android:src="@drawable/icon_white_go"
+                android:layout_width="@dimen/x13"
+                android:layout_height="@dimen/x13" />
+            <TextView
+                android:layout_marginLeft="@dimen/x5"
+                android:text="到这去"
+                android:textSize="@dimen/x13"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_cancel"
+        android:background="#00000000"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_width="@dimen/x50"
+        android:layout_height="@dimen/x50">
+        <ImageView
+            android:src="@drawable/icon_delete_white"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30" />
+    </LinearLayout>
+
+</LinearLayout>

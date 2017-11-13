@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_toolbar"
+    android:orientation="vertical"
+    tools:context="com.sctjsj.forestcommunity.ui.activity.ManageAdressActivity">
+
+    <!--title-->
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45">
+        <LinearLayout
+            android:id="@+id/linear_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/x5"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15"
+                android:layout_margin="@dimen/x5"
+                android:src="@drawable/icon_longin_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="管理收货地址"
+                android:textColor="@color/color_user"
+                android:textSize="@dimen/x16" />
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/app_fade_gray"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_recycler_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <q.rorbin.qrefreshlayout.QRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        </q.rorbin.qrefreshlayout.QRefreshLayout>
+
+        <Button
+            android:id="@+id/bt_add_newAdress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40"
+            android:background="#2C94F5"
+            android:text="新增收获地址"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/x14" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lin_NoData"
+        android:background="#90EDECEC"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/ic_defult_no_data"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x70" />
+        <TextView
+            android:textSize="@dimen/x13"
+            android:layout_marginTop="@dimen/x5"
+            android:text="您还没有添加收获地址~"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_confirm"
+            android:text="前去添加"
+            android:textSize="@dimen/x13"
+            android:textColor="#ffffff"
+            android:background="@drawable/longin_bt_backgroungd"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x30" />
+    </LinearLayout>
+
+
+</LinearLayout>

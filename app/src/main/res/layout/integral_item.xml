@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sctjsj.basemodule.base.ui.layout.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    app:ios="true"
+    app:leftSwipe="true"
+    app:swipeEnable="true"
+    android:layout_marginBottom="@dimen/x1"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/x320"
+        android:layout_height="@dimen/x80">
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:src="@drawable/icon_integral_icon"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x50" />
+        
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/tv_inregral_name"
+                   android:textSize="@dimen/x12"
+                   android:textColor="@color/color_user"
+                   android:layout_marginLeft="@dimen/x10"
+                   android:text="友臣肉松饼整箱礼盒福asdfa"
+                   android:singleLine="true"
+                   android:layout_weight="1"
+                   android:maxEms="10"
+                   android:ellipsize="end"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_marginTop="@dimen/x15"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_marginLeft="@dimen/x10"
+                   android:id="@+id/tv_time"
+                   android:textSize="@dimen/x12"
+                   android:text="2017-8-14"
+                   android:layout_marginRight="@dimen/x10"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:visibility="gone"
+                   android:id="@+id/tv_click"
+                   android:gravity="center"
+                   android:layout_marginLeft="@dimen/x10"
+                   android:text="购物送积分"
+                   android:textSize="@dimen/x12"
+                   android:paddingLeft="@dimen/x8"
+                   android:paddingRight="@dimen/x8"
+                   android:background="@drawable/edit_adress_background"
+                   android:layout_width="wrap_content"
+                   android:layout_height="@dimen/x20" />
+               <TextView
+                   android:id="@+id/tv_integral"
+                   android:textSize="@dimen/x12"
+                   android:textStyle="bold"
+                   android:textColor="@color/color_user"
+                   android:gravity="right"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:text="+20"
+                   android:layout_marginRight="@dimen/x10"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/bt_delete"
+        android:layout_width="@dimen/x60"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:background="#FF0000"
+        android:textSize="@dimen/x15"
+        />
+</com.sctjsj.basemodule.base.ui.layout.SwipeMenuLayout>

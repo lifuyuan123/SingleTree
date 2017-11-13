@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_toolbar"
+    tools:context=".ui.activity.LoginActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@mipmap/icon_longin_background"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <!--title-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/linear_back"
+                android:layout_margin="@dimen/x5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_margin="@dimen/x6"
+                    android:src="@drawable/icon_longin_back"
+                    android:layout_width="@dimen/x15"
+                    android:layout_height="@dimen/x15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textStyle="bold"
+                    android:text="登录"
+                    android:textSize="@dimen/x16"
+                    android:gravity="center"
+                    android:textColor="@color/material_blue_grey_95"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:background="#B6B6B6"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginTop="@dimen/x30"
+            android:src="@mipmap/icon_longin_tree"
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/x120" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/x30"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/x260"
+            android:layout_height="@dimen/x35"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <ImageView
+                android:src="@drawable/icon_login_email"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20" />
+            <EditText
+                android:id="@+id/edt_login_phone"
+
+                android:hint="E-meail/手机号/账号"
+                android:textSize="@dimen/x13"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/x10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/x260"
+            android:layout_height="@dimen/x35"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <ImageView
+                android:src="@drawable/icon_login_lock"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20" />
+            <EditText
+                android:id="@+id/edt_login_password"
+                android:hint="密码"
+
+                android:textSize="@dimen/x13"
+                android:inputType="textPassword"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/bt_login"
+                android:text="登陆"
+                android:textSize="@dimen/x13"
+                android:textColor="#ffffff"
+                android:background="@drawable/longin_bt_backgroungd"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_width="@dimen/x260"
+                android:layout_height="@dimen/x35" />
+
+            <TextView
+                android:id="@+id/tv_forget_password"
+                android:layout_marginTop="@dimen/x10"
+                android:text="忘记密码？"
+                android:textSize="@dimen/x13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_regist"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40">
+
+        <TextView
+            android:textSize="@dimen/x13"
+            android:text="新用户？"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_regist"
+            android:textSize="@dimen/x13"
+            android:text="注册"
+            android:textColor="#2C94F5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

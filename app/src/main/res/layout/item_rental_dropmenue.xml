@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/item_dropMenu_city_layout"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/item_dropMenu_city_cityName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="成都"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/x12"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x30"
+            />
+
+        <ImageView
+            android:id="@+id/item_dropMenu_city_IsCheck"
+            android:layout_width="@dimen/x15"
+            android:layout_height="@dimen/x15"
+            android:layout_marginRight="@dimen/x30"
+            android:src="@drawable/ic_defult_sure"
+            />
+    </LinearLayout>
+    <TextView
+        android:background="@color/app_fade_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1" />
+
+</LinearLayout>

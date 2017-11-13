@@ -1,0 +1,31 @@
+/**basemodule 使用指南**/
+
+一。使用 basemodule 初始化的工作
+
+   自定义Application类，在 onCreate()中完成
+        1.注册SystemConfig
+        //初始化系统配置
+        singletonManager.registerObj(Tag.TAG_SINGLETON_SYSTEM_CONFIG_HOLDER,SystemConfig.init(this));
+
+        2.//初始化 ARouter
+         //开启 instant run 的时候，opendebug 必须在 init 前面
+          ARouter.openDebug();//开启调试模式(如果在InstantRun模式下运行，必须开启调试模式！线上版本需要关闭,否则有安全风险)
+          ARouter.init(this);
+          ARouter.openLog();
+          ARouter.printStackTrace();
+
+         3.//初始化 xUtils
+          x.Ext.init(this);
+
+
+
+二。广播相关
+
+1.监听网络变化的广播已经在 basemodule 的 manifest 中静态注册了
+
+
+三。混合开发
+basemodule 中集成了腾讯 X5浏览器内核
+com.tencent.smtt.sdk.WebView
+
+

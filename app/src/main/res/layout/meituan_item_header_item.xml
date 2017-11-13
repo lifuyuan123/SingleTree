@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:id="@+id/tvName"
+          android:layout_width="wrap_content"
+          android:layout_height="35dp"
+          android:layout_marginTop="@dimen/x10"
+          android:layout_marginBottom="15dp"
+          android:gravity="center"
+          android:background="@drawable/meituan_iten_header_item_bg"
+          android:minWidth="90dp"
+          android:textColor="@color/color_user"
+          android:textSize="@dimen/x13"
+          tools:text="上海背景"/>

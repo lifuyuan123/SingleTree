@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/item_rental_dropm_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在售"
+            android:textSize="@dimen/x12"
+            />
+    </LinearLayout>
+    <TextView
+        android:background="@color/app_fade_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1" />
+</LinearLayout>

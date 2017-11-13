@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x70"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:id="@+id/froum_lay_e_layout"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/x40"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/ic_froum_write_bg"
+            >
+            <ImageView
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25"
+                android:src="@mipmap/ic_froum_write"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我要发帖"
+                android:textSize="@dimen/x15"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x10"
+        android:background="@color/app_fade_gray"
+        />
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shop_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_toolbar"
+    android:orientation="vertical"
+    tools:context="com.sctjsj.forestcommunity.ui.activity.ShopDetailActivity">
+
+    <!--title-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:id="@+id/shop_detali_back"
+            android:layout_width="@dimen/x45"
+            android:layout_height="@dimen/x45"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_marginRight="@dimen/x5"
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15"
+                android:src="@mipmap/ic_defult_back"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/x45"
+            android:text="商家详情"
+            android:textSize="@dimen/x17"
+            android:textColor="#2D2D2D"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/app_fade_gray"/>
+
+    <q.rorbin.qrefreshlayout.QRefreshLayout
+        android:layout_weight="1"
+        android:id="@+id/shop_detali_qrf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/shop_detali_rv"
+            />
+
+    </q.rorbin.qrefreshlayout.QRefreshLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:id="@+id/shop_lay_f_btn"
+            android:layout_width="@dimen/x300"
+            android:layout_height="@dimen/x35"
+            android:layout_marginTop="@dimen/x10"
+            android:text="立即支付"
+            android:textSize="@dimen/x15"
+            android:textColor="#ffffff"
+            android:background="@drawable/longin_bt_backgroungd"
+            android:layout_marginBottom="@dimen/x10"
+            />
+    </LinearLayout>-->
+</LinearLayout>

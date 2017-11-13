@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_toolbar"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    tools:context="com.sctjsj.forestcommunity.ui.activity.SearchActivity">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45">
+
+        <RelativeLayout
+            android:background="@drawable/search_edit_backgroud"
+            android:layout_marginLeft="@dimen/x10"
+
+            android:layout_marginTop="@dimen/x6"
+            android:layout_marginBottom="@dimen/x6"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/lin_search"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30">
+                    <ImageView
+                        android:src="@drawable/icon_search"
+                        android:layout_width="@dimen/x15"
+                        android:layout_height="@dimen/x15" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_search"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:hint="请输入楼盘或商圈"
+                    android:textSize="@dimen/x12"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_voice_search"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30">
+                <ImageView
+                    android:src="@drawable/icon_voice"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_cancel"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginRight="@dimen/x5"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40">
+            <TextView
+                android:text="取消"
+                android:textSize="@dimen/x14"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <q.rorbin.qrefreshlayout.QRefreshLayout
+        android:visibility="gone"
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </q.rorbin.qrefreshlayout.QRefreshLayout>
+
+   <ListView
+       android:id="@+id/lv_search"
+       android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lin_search_NoData"
+        android:background="#90EDECEC"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/ic_defult_no_data"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x70" />
+        <TextView
+            android:textSize="@dimen/x13"
+            android:layout_marginTop="@dimen/x5"
+            android:text="暂无数据"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_toolbar"
+    android:orientation="vertical"
+    tools:context="com.sctjsj.forestcommunity.ui.activity.IntegralRecordActivity">
+    <!--title-->
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/linear_back"
+            android:layout_margin="@dimen/x5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_margin="@dimen/x6"
+                android:src="@drawable/icon_longin_back"
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:text="积分记录"
+                android:textSize="@dimen/x16"
+                android:gravity="center"
+                android:textColor="@color/material_blue_grey_95"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:background="#B6B6B6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/icon_integral_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100">
+        <ImageView
+            android:layout_marginLeft="@dimen/x10"
+            android:src="@drawable/icon_integral"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60" />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/x10"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="当前积分"
+                android:textSize="@dimen/x12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_record_integral"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="@dimen/x28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:background="#EDEDED"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x10" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:background="#DEDEDE"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        app:tabTextAppearance="@style/TabLayout_textSize"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/red_btn_bg_pressed_color"
+        ></android.support.design.widget.TabLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

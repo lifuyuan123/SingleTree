@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_toolbar"
+    android:orientation="vertical"
+    tools:context="com.sctjsj.forestcommunity.ui.activity.SettingActivity">
+
+    <!--title-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/linear_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/x5"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15"
+                android:layout_margin="@dimen/x6"
+                android:src="@drawable/icon_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="设置"
+                android:textColor="@color/color_user"
+                android:textSize="@dimen/x16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_alignParentBottom="true"
+            android:background="@color/app_fade_gray" />
+    </RelativeLayout>
+
+    <!--列表-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--缓存-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lin_setting_clear"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40">
+            <TextView
+                android:layout_marginLeft="@dimen/x10"
+                android:text="清除缓存"
+                android:textSize="@dimen/x13"
+                android:textColor="@color/color_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginRight="@dimen/x10"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="6.4M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginLeft="@dimen/x5"
+                    android:src="@drawable/icon_back"
+                    android:layout_width="@dimen/x13"
+                    android:layout_height="@dimen/x13" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@color/app_fade_gray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1" />
+
+
+        <!--版本信息-->
+        <LinearLayout
+            android:id="@+id/lin_setting_verson"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40">
+            <TextView
+                android:layout_marginLeft="@dimen/x10"
+                android:text="版本信息"
+                android:textSize="@dimen/x13"
+                android:textColor="@color/color_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginRight="@dimen/x10"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_verson"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginLeft="@dimen/x5"
+                    android:src="@drawable/icon_back"
+                    android:layout_width="@dimen/x13"
+                    android:layout_height="@dimen/x13" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@color/app_fade_gray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1" />
+
+
+        <!--关于我们-->
+        <LinearLayout
+            android:id="@+id/lin_setting_aboutOwn"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40">
+            <TextView
+                android:layout_marginLeft="@dimen/x10"
+                android:text="关于我们"
+                android:textSize="@dimen/x13"
+                android:textColor="@color/color_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginRight="@dimen/x10"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="@dimen/x5"
+                    android:src="@drawable/icon_back"
+                    android:layout_width="@dimen/x13"
+                    android:layout_height="@dimen/x13" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_loginOut"
+        android:text="退出登录"
+        android:textSize="@dimen/x15"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/x30"
+        android:background="@drawable/longin_bt_backgroungd"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/x300"
+        android:layout_height="@dimen/x35" />
+
+</LinearLayout>
